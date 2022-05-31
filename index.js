@@ -1,39 +1,75 @@
 const Node = require('./node');
 const LinkedList = require('./LinkedList');
+const Queue = require('./Queue');
+const Stack = require("./Stack")
 
 const linkedList = LinkedList();
+const queue = Queue();
+const stack = Stack();
 
-linkedList.add("André");
-linkedList.add("Busiswa");
-linkedList.add("Vuyisa");
-linkedList.add("Moipone");
-linkedList.add("Ncebakazi");
+stack.push("Andre");
+stack.push("Busi");
 
-console.log(linkedList.count());
-console.log(linkedList.first()); 		// should return false
-console.log(linkedList.last()); 		// should return false
 
-function print (name) {
-	console.log("--- : " + name);
-}
+ console.log(stack.pop())   // Busi
+ console.log(stack.pop())   // Andre
 
-linkedList.forEach(print);
 
-linkedList.clear();
+//   queue.enqueue("Andre")
+//   queue.enqueue("Busi");
+//   queue.enqueue("Ncesh");
+//   queue.enqueue("lizo");
 
-console.log(linkedList.count()); // should be 0
+//  console.log(queue.first()); 
+//  console.log(queue.last()); 
+ 
+// console.log(queue.dequeue())  // Andre
+//  queue.enqueue("mamas")        //shhould add mamas at the end
+ 		//
+	
 
-linkedList.add("Ncebakazi");
+// linkedList.add("André");
+// linkedList.add("Busiswa");
+// linkedList.add("Vuyisa");
+// linkedList.add("Moipone");
+// linkedList.add("Ncebakazi");
 
-console.log(linkedList.count()); // should be 1
+// console.log(linkedList.count());
+// console.log(linkedList.first()); 		// should return false
+// console.log(linkedList.last()); 		// should return false
 
-console.log(linkedList.contains("John")); 		// should return false
-console.log(linkedList.contains("Ncebakazi")); 	// should return true
-linkedList.add("John");
-console.log(linkedList.contains("John")); 		// should return false
+// function print (name) {
+// 	console.log("--- : " + name);
+// }
 
-console.log(linkedList.first()); 		// should return false
-console.log(linkedList.last()); 		// should return false
+// linkedList.forEach(print);
+
+// linkedList.clear();
+
+// console.log(linkedList.count()); // should be 0
+
+// linkedList.add("Ncebakazi");
+
+// console.log(linkedList.count()); // should be 1
+
+// console.log(linkedList.contains("John")); 		// should return false
+// console.log(linkedList.contains("Ncebakazi")); 	// should return true
+// linkedList.add("John");
+// console.log(linkedList.contains("John")); 		// should return false
+
+// console.log(linkedList.first()); 		// should return false
+// console.log(linkedList.last()); 		// should return false
+
+
+
+
+
+
+
+
+
+
+
 
 // console.log(linkedList.first()); 		// should return false
 
