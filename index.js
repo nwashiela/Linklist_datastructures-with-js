@@ -24,8 +24,7 @@ stack.push("Busi");
 //  console.log(queue.last()); 
  
 // console.log(queue.dequeue())  // Andre
-//  queue.enqueue("mamas")        //shhould add mamas at the end
- 		//
+// console.log(queue.dequeue())  // Busi
 	
 
 // linkedList.add("André");
